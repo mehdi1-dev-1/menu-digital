@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Menu digital Pop's — commandez via QR, menu responsive et moderne.">
+  <title>Pop's - Menu Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/favicon.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">
+        <!-- Replace with your logo file at assets/logo.png -->
+        <img src="assets/logo.png" alt="Pop's logo" onerror="this.style.display='none'">
+        <h1>Pop's</h1>
+      </div>
+      <p class="tag">Join the gang • By Bilal</p>
+    </div>
+    <div class="top-right">
+      <div class="qr">
+        <p>Scannez pour commander</p>
+        <img id="qr-img" alt="QR code vers le menu" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://example.com">
+      </div>
+      <a id="order-whatsapp" class="btn" href="#">Commander (WhatsApp)</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav id="category-nav" class="category-nav" aria-label="Navigation catégories">
+      <!-- Categories injected by JS -->
+    </nav>
+
+    <div class="controls">
+      <input id="search" placeholder="Rechercher un plat, ingrédient ou prix..." />
+      <select id="category-filter">
+        <option value="">Toutes catégories</option>
+      </select>
+    </div>
+
+    <section id="menu" class="menu-grid" role="list">
+      <!-- Menu items will be injected by script.js -->
+    </section>
+
+    <footer class="footer">
+      <p>Contact / Remarques : remplacez le lien QR dans <strong>README.md</strong> par votre URL de production.</p>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
